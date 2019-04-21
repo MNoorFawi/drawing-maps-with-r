@@ -18,7 +18,6 @@ get_stamenmap(scrmnt, maptype = "watercolor") %>% ggmap() +
   ggtitle("Sacramento City")
 ```
 
-    ## Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under CC BY SA.
 
 ![](maps_files/figure-gfm/ggmap-1.png)<!-- -->
 
@@ -29,9 +28,6 @@ qmplot(longitude, latitude, data = Sacramento,
        color = price_in_thousands) + scale_color_viridis_c()
 ```
 
-    ## Using zoom = 10...
-
-    ## Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.
 
 ![](maps_files/figure-gfm/ggmap-2.png)<!-- -->
 
@@ -51,7 +47,6 @@ sacramento_map <-
   ggmap(extent = "device")
 ```
 
-    ## Source : https://maps.googleapis.com/maps/api/staticmap?center=38.59298,-121.360288&zoom=10&size=640x640&scale=2&maptype=satellite&key=xxx-mLNxQLVB9pKCbnnS8
 
 ``` r
 sacramento_map + geom_point(
@@ -73,8 +68,6 @@ sacramento_map + geom_point(
 dev.off()
 ```
 
-    ## null device 
-    ##           1
 
 ``` r
 ## To convert a df to sf
@@ -155,9 +148,6 @@ tm_shape(tgs_it_map) +
   tm_borders(alpha = 0.6)
 ```
 
-    ## Linking to GEOS 3.6.1, GDAL 2.2.3, PROJ 4.9.3
-
-    ## Variable "delta" contains positive and negative values, so midpoint is set to 0. Set midpoint = NA to show the full spectrum of the color palette.
 
 ![](maps_files/figure-gfm/tgs%20italy-1.png)<!-- -->
 
